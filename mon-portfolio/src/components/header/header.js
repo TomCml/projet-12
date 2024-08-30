@@ -1,22 +1,22 @@
 import React from "react";
+import "./header.scss";
+import logo from "../../assets/logo v2.png";
 
-const Header = () => {
+function Header() {
   return (
-    <header style={styles.header}>
-      <h1 style={styles.title}>Mon Portfolio</h1>
-      <nav style={styles.nav}>
-        <a href="#about" style={styles.link}>
-          À propos
-        </a>
-        <a href="#projects" style={styles.link}>
-          Projets
-        </a>
-        <a href="#contact" style={styles.link}>
-          Contact
-        </a>
+    <header>
+      <div className="logo-container">
+        <img src={logo} alt="Logo Thomas Cemeli" className="logo"></img>
+      </div>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <div></div>
     </header>
   );
-};
+}
 
 export default Header;
