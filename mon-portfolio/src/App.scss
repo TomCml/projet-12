@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --background-color: #FAFAFA;
     --secondary-background-color: #E0E0E0;
@@ -8,9 +12,8 @@
     --text-color: #000000;
     --accent-color: #607D8B;
 }
-  
-.App{
-    
+
+.App {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -20,9 +23,8 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap : 5vh; 
-    display: flex;
     align-items: center;
+    gap: 5vh;
 }
 
 #root {
@@ -32,19 +34,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    
+}
 
-  
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
     color: var(--main-text-color);
     font-weight: 500;
 }
 
-p, a{
+p, a {
     color: var(--text-color);
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         color: var(--accent-color);
     }
 }
