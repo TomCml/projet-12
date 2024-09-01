@@ -20,20 +20,21 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap : 10vh;
-    width: 1000px;
-     
+    gap : 5vh; 
+    display: flex;
+    align-items: center;
 }
 
 #root {
     background-color: var(--background-color);
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-    
+
+  
 h1, h2, h3, h4{
     color: var(--main-text-color);
     font-weight: 500;

@@ -1,14 +1,14 @@
 import "./App.scss";
 import Header from "./components/header/header";
-import About from "./pages/about/about";
 import Projects from "./pages/projects/projects";
 import Section from "./components/section/section";
+import About from "./components/about/about";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Section />
+      <About />
       <div></div>
     </div>
   );
