@@ -1,14 +1,14 @@
 .about-section{
-    margin-top: 150px;
+    
     width: 100%;
     display: flex;
     flex-direction: row;
+
 
     .thomas{
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .placeholder{
@@ -20,9 +20,10 @@
         justify-content: flex-end;
         align-items: center;
         right: 0;
-        height: 30vh;
+        height: 38vh;
         width: 70%;
         background-color: var(--main-text-color);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         padding-left: 200px;
         padding: 20px;
         gap: 20px;

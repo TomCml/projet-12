@@ -1,18 +1,25 @@
 import "./App.scss";
 import Header from "./components/header/header";
-import Projects from "./pages/projects/projects";
-import Section from "./components/section/section";
 import About from "./components/about/about";
-import SkillCard from "./components/skillcard/skillcard";
-import Skills from "./components/skills/skills";
+import Technos from "./components/technos/technos";
+import Skills from "./components/skills/skills"
+import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact"
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <About />
-      <Skills />
-      <div></div>
+      <div className="body">  
+        <About />
+        <div className="skills-and-technos">
+          <Technos />
+          <Skills />
+        </div>
+        <Projects/>
+        <Contact/>
+      </div>
+      
     </div>
   );
 };

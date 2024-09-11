@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Gestion de projets web",
+      "description": "Portfolio, site vitrine, évènementiel, application mobile.",
+      "icon": "faPersonChalkboard"
+    },
+    {
+      "title": "Intégration Web",
+      "description": "Intégrations HTML / CSS en accord avec les normes web et les maquettes développées.",
+      "icon":"faPenToSquare"
+    },
+    {
+      "title": "Solutions applicatives sur mesure",
+      "description": "Des outils adaptés à votre coeur de métier, applications & solutions personnalisées.",
+      "icon": "faHandshake"
+    },
+    {
+      "title": "Référencement naturel",
+      "description": "Mise en place des bonnes pratiques de référencement pour une visibilité maximale et des performances exemplaires pour un confort d'utilisation.",
+      "icon": "faMagnifyingGlass"
+    },
+    {
+      "title": "Pages dynamiques",
+      "description": "Des animations esthétiques et pertinentes, impliquant l'utilisateur.",
+      "icon": "faPlay"
+    },
+    {
+      "title": "Interface d'administration",
+      "description": "Au delà du site client, une interface d'administration personnalisée peut être développée pour vous permettre de suivre et organiser votre projet.",
+      "icon":"faChartLine"
+    },
+    {
+      "title": "Responsive design",
+      "description": "Tous les sites développés sont adaptés aux tablettes & application mobile.",
+      "icon":"faMobileScreenButton"
+    }
+  ]
+  

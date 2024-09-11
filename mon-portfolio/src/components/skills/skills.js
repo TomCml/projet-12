@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./skills.scss";
-import Skillcard from "../skillcard/skillcard";
-import sass from "../../assets/technos/sass.png";
-import htmlcss from "../../assets/technos/htmlcss.png";
-import react from "../../assets/technos/react.png";
-import js from "../../assets/technos/js.png";
-import nodejs from "../../assets/technos/nodejs.png";
+import axios from "axios"
+import Skillcard from "../skillcard/skillcard"
+
 
 const Skills = () => {
+
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    axios.get('./skills.json')
+      .then(response => {
+        setData(response.data); 
+        setLoading(false);
+      })
+      .catch(error => {
+        setError(error); 
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p>Chargement...</p>;
+  if (error) return <p>Erreur : {error.message}</p>;
+
+
   return (
     <div className="skills">
       <h2>Compétences</h2>
-      <Skillcard logo={sass} name="Sass" />
-      <Skillcard logo={htmlcss} name="HTML & CSS" />
-      <Skillcard logo={react} name="React" />
-      <Skillcard logo={js} name="JavaScript" />
-      <Skillcard logo={nodejs} name="Node.JS" />
+
+      {data && data.map((item, index) => (
+        
+        <Skillcard key={index} title={item.title} description={item.description} icon={item.icon}/>
+
+      ))}
     </div>
   );
-};
+}
 
 export default Skills;

@@ -1,18 +1,38 @@
 import React from "react";
 import "./skillcard.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faPenToSquare, faPersonChalkboard, faMagnifyingGlass, faPlay, faChartLine, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake,  } from '@fortawesome/free-regular-svg-icons';
 
-const Skillcard = ({ logo, name }) => {
+const skillcard = ({ title, description, icon }) => {
+
+  const iconMap = {
+    faCoffee: faCoffee,
+    faPenToSquare: faPenToSquare,
+    faHandshake: faHandshake,
+    faPersonChalkboard: faPersonChalkboard,
+    faPlay: faPlay,
+    faMagnifyingGlass: faMagnifyingGlass,
+    faMobileScreenButton: faMobileScreenButton,
+    faChartLine: faChartLine
+  };
+
   return (
     <div className="skillcard">
-      <img src={logo} alt={`${name} logo`} />
-      <h3>{name}</h3>
+      <div className="title">
+        <h3>{title}</h3>
+        <FontAwesomeIcon icon={iconMap[icon] || faPersonChalkboard} />
+      </div>
+      <p>{description}</p>
     </div>
   );
 };
 
-Skillcard.defaultProps = {
-  logo: "",
-  name: "Unnamed Skill",
+skillcard.defaultProps = {
+  title: "Unnamed Skill",
+  description: "No description found",
+  icon: "faHandshake" 
 };
 
-export default Skillcard;
+
+export default skillcard;
