@@ -19,7 +19,7 @@ function About() {
   }, []);
 
   return (
-    <div className="about-section">
+    <div className="about-section" id="about">
       <div
         className="about"
         style={{ transform: `translateX(-${scrollPosition / 4}px)` }}

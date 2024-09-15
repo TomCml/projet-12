@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import './projects.scss';
-import Projectcard from '../projectcard/projectcard';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import "./projects.scss";
+import Projectcard from "../projectcard/projectcard";
+import axios from "axios";
 
 const Projects = () => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("./projects.json")
-      .then(response => {
+    setLoading(true);
+    axios
+      .get("./projects.json")
+      .then((response) => {
         setData(response.data.projects);
         setLoading(false);
       })
-      .catch(error => {
+      .catch((error) => {
         setError(error);
         setLoading(false);
       });
@@ -24,7 +26,7 @@ const Projects = () => {
   if (error) return <p>Erreur : {error.message}</p>;
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h2>Mes projets</h2>
       <div className="content">
         {data.map((project, index) => (
