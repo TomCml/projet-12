@@ -26,14 +26,14 @@ const Projects = () => {
   if (error) return <p>Erreur : {error.message}</p>;
 
   return (
-    <div className="projects" id="projects">
+    <section className="projects" id="projects">
       <h2>Mes projets</h2>
       <div className="content">
         {data.map((project, index) => (
           <Projectcard key={index} project={project} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

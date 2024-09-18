@@ -6,11 +6,16 @@
     height: auto;
     padding-bottom: 50px;
     scroll-margin-top: 158px;
+    background-color: var(--secondary-background-color);
+
+    transition: ease-in-out 0.2s;
+
 
     
 
     h2{
         text-align: center;
+        margin-bottom: 100px;
     }
     
     .content{

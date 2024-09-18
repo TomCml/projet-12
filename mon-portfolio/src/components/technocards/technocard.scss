@@ -1,30 +1,39 @@
-.technocard{
-    cursor: pointer;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    border: 4px solid var(--accent-color);
-    border-radius: 25px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: ease-in-out 0.2s;
+.technocard {
+  box-sizing: content-box;
+  z-index: 2;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  position: relative;
+  clip-path: inset(0);
+  transition: box-shadow 0.2s ease-in-out; /* Ajout de la transition sur box-shadow */
 
-    img{
-        height: 50px;
-        margin: 10px;
-    }
-    h3{
-        
-        margin: 10px
-    }
+  img {
+    height: 50px;
+    margin: 10px;
+    object-fit: contain;
+  }
 
-    &:hover {
-        scale: 1.02;
-        background-color: var(--accent-color);
-        
-        h3{
-            color: white;
-        }   
+  h3 {
+    margin: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--main-text-color);
+    transition: font-weight 0.2s ease-in-out; /* Transition sur font-weight */
+  }
+
+  &:hover {
+    box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.5); /* Utiliser rgba pour ajuster l'opacité */
+    background-color: white; /* Si besoin pour tester la visibilité de l'ombre */
+
+    h3 {
+      font-weight: 600;
     }
+  }
 }

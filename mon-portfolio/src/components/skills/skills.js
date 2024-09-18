@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./skills.scss";
 import axios from "axios";
 import Skillcard from "../skillcard/skillcard";
+import Loader from "../loader/loader";
 
 const Skills = () => {
   const [data, setData] = useState(null);
@@ -21,7 +22,7 @@ const Skills = () => {
       });
   }, []);
 
-  if (loading) return <p>Chargement...</p>;
+  if (loading) return <Loader />;
   if (error) return <p>Erreur : {error.message}</p>;
 
   return (

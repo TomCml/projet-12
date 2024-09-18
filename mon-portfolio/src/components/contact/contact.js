@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./contact.scss";
 import axios from "axios";
+import Loader from "../loader/loader";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -8,8 +9,6 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [confirmation, setConfirmation] = useState(false);
-
-  // Référence pour gérer le scroll
   const formRef = useRef(null);
 
   const sendContact = (e) => {
@@ -27,7 +26,6 @@ const Contact = () => {
         setLoading(false);
         setConfirmation(true);
 
-        // Défilement doux vers le formulaire ou la confirmation
         if (formRef.current) {
           formRef.current.scrollIntoView({ behavior: "smooth" });
         }
@@ -36,7 +34,6 @@ const Contact = () => {
         setError(error);
         setLoading(false);
 
-        // Défilement vers le formulaire en cas d'erreur
         if (formRef.current) {
           formRef.current.scrollIntoView({ behavior: "smooth" });
         }
@@ -44,9 +41,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact" ref={formRef}>
+    <section className="contact" id="contact" ref={formRef}>
       {loading ? (
-        <h3>Envoi de votre message...</h3>
+        <Loader />
       ) : error ? (
         <h3>Erreur : {error.message}</h3>
       ) : confirmation ? (
@@ -78,7 +75,7 @@ const Contact = () => {
           </form>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

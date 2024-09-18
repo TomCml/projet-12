@@ -1,35 +1,29 @@
 {
-    "technos": [
-      {
-        "name": "Sass",
-        "logo": "./technos/sass.png"
+  "technos": [
+    {
+      "name": "Sass",
+      "logo": "./technos/sass.png"
+    },
+    {
+      "name": "HTML & CSS",
+      "logo": "./technos/htmlcss.png"
+    },
+    {
+      "name": "React",
+      "logo": "./technos/react.png"
+    },
+    {
+      "name": "JavaScript",
+      "logo": "./technos/js.png"
+    },
+    {
+      "name": "Node.js",
+      "logo": "./technos/nodejs.png"
+    },
 
-      },
-      {
-        "name": "HTML & CSS",
-        "logo": "./technos/htmlcss.png"
-      },
-      {
-        "name": "React",
-        "logo": "./technos/react.png"
-      },
-      {
-        "name": "JavaScript",
-        "logo": "./technos/js.png"
-      },
-      {
-        "name": "Node.js",
-        "logo": "./technos/nodejs.png"
-      },
-      {
-        "name": "Next.js",
-        "logo": "./technos/nextjs.png"
-      },
-      {
-        "name": "MongoDB",
-        "logo": "./technos/mongodb.png"
-      
-      }
-    ]
-  }
-  
+    {
+      "name": "MongoDB",
+      "logo": "./technos/mongodb.png"
+    }
+  ]
+}

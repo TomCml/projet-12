@@ -4,12 +4,13 @@
     display: flex;
     flex-direction: row;
     scroll-margin-top: 88px;
+    margin-bottom: 50px;
 
 
 
     .thomas{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -17,14 +18,15 @@
         width: 30%;
     }
     .about{
+        
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         right: 0;
-        height: 38vh;
+        height: 15vh;
         width: 70%;
-        background-color: var(--main-text-color);
+        background-color: var(--secondary-background-color);
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         padding-left: 200px;
         padding: 20px;
@@ -35,18 +37,23 @@
         
         
         img{
-            border: 3px solid var(--background-color);
+            border: 3px solid var(--main-text-color);
             width: 250px;
             border-radius: 50%;
         }
+
+        h2{
+        font-size: 120px;
+
+        }
     
         h2, p {
-            color: var(--background-color);
+            color: var(--main-text-color);
         }
 
         p{
             width: 40%;
-            
+              
         }
     }
 }

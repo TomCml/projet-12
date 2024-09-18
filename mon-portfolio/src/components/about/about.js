@@ -19,14 +19,14 @@ function About() {
   }, []);
 
   return (
-    <div className="about-section" id="about">
+    <section className="about-section" id="about">
       <div
         className="about"
-        style={{ transform: `translateX(-${scrollPosition / 4}px)` }}
+        style={{ transform: `translateX(-${scrollPosition}px)` }}
       >
         <div className="thomas">
           <h2>Thomas Cemeli</h2>
-          <img src={profilePicture} alt="Profile"></img>
+          {/*<img src={profilePicture} alt="Profile"></img>*/}
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -39,7 +39,7 @@ function About() {
         </p>
       </div>
       <div className="placeholder"></div>
-    </div>
+    </section>
   );
 }
 

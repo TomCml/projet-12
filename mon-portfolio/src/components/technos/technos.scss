@@ -1,17 +1,34 @@
-.technos{
+.technos {
+    width: 100%;
+    height: 320px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    text-align: center;   
-    max-width: 50%; 
+    text-align: center;
+    align-items: center;
     scroll-margin-top: 108px;
+    position: relative;
+    padding-bottom: 40px;
+    background-color: var(--secondary-background-color);
+   
 
+    h2 {
+        z-index: 1;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 8px;
+        color: var(--main-text-color);
+        background-color: var(--background-color);
+        width:200px;
+    }
 
-    .card-container{
+    .card-container {
+        z-index: 1;
         display: flex;
         flex-direction: row;
         width: 100%;
         justify-content: center;
         gap: 10px;
+        padding-bottom: 100px;
     }
 }
