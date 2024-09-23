@@ -11,7 +11,7 @@
         "Backend avec gestion automatique de la base de données",
         "Interface de gestion pour les administrateurs"
       ],
-      "backgroundImage": "/assets/projects/moderation-otp.jpg"
+      "backgroundImage": "/assets/projects/moderation-otp.png"
     },
     {
       "name": "Moderation OTP",
@@ -23,7 +23,7 @@
         "Gestion des présences utilisateur (ajout/suppression)",
         "Backend avec gestion automatique de la base de données"
       ],
-      "backgroundImage": "/assets/projects/moderation-otp.jpg"
+      "backgroundImage": "/assets/projects/moderation-otp.png"
     }
   ]
 }

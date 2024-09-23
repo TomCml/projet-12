@@ -11,24 +11,22 @@ import DarkModeProvider from "../src/context/darkModeContext/darkModeContext";
 
 const App = () => {
   useEffect(() => {
-    const sections = document.querySelectorAll("section"); // Sélection de toutes les balises <section>
-
+    const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible"); // Ajout de la classe "visible" quand la section est visible
+            entry.target.classList.add("visible");
           }
         });
       },
-      { threshold: 0.1 } // Déclenche l'animation quand 10% de la section est visible
+      { threshold: 0.1 }
     );
 
     sections.forEach((section) => {
-      observer.observe(section); // Observer chaque section
+      observer.observe(section);
     });
 
-    // Nettoyage de l'observer lors de la destruction du composant
     return () => {
       sections.forEach((section) => observer.unobserve(section));
     };
@@ -39,13 +37,13 @@ const App = () => {
       <div className="App">
         <Header />
         <div className="body">
-          <About /> {/* About contient sa propre balise <section> */}
+          <About />
           <div className="skills-and-technos">
-            <Technos /> {/* Technos contient sa propre balise <section> */}
-            <Skills /> {/* Skills contient sa propre balise <section> */}
+            <Technos />
+            <Skills />
           </div>
-          <Projects /> {/* Projects contient sa propre balise <section> */}
-          <Contact /> {/* Contact contient sa propre balise <section> */}
+          <Projects />
+          <Contact />
         </div>
         <Footer />
       </div>

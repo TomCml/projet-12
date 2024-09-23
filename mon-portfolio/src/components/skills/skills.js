@@ -27,17 +27,19 @@ const Skills = () => {
 
   return (
     <div className="skills" id="skills">
-      <h2>Compétences</h2>
+      <div className="overlay">
+        <h2>Compétences</h2>
 
-      {data &&
-        data.map((item, index) => (
-          <Skillcard
-            key={index}
-            title={item.title}
-            description={item.description}
-            icon={item.icon}
-          />
-        ))}
+        {data &&
+          data.map((item, index) => (
+            <Skillcard
+              key={index}
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+            />
+          ))}
+      </div>
     </div>
   );
 };

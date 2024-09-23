@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rajdhani:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import './styles/variables';
+@import './styles/mixin';
 
 html {
   scroll-behavior: smooth;
-}
-
-:root {
-  --background-color: #FAFAFA;
-  --secondary-background-color: #E0E0E0;
-  --main-text-color: #333333;
-  --secondary-text-color: #1C1C1C;
-  --accent-color: #607D8B;
 }
 
 .App {
@@ -29,6 +23,10 @@ html {
   background-color: var(--background-color);
   transition: ease-in-out 0.2s;
 
+  svg {
+    color: var(--accent-color);
+  }
+
   .body {
     margin-top: 150px;
     width: 100%;
@@ -36,8 +34,6 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-
   }
 
   .skills-and-technos {
@@ -46,6 +42,7 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -70,5 +67,53 @@ p, a {
 
   &:hover {
     color: var(--accent-color);
+  }
+}
+
+@media (max-width: 1024px) {
+  .App {
+    
+
+    .skills-and-technos {
+      flex-direction: column;
+      gap: 15px; 
+      width: 100%; 
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1.5rem;
+  }
+
+  p, a {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    gap: 2vh; 
+    max-width: 100%;
+
+    .body {
+      margin-top: 80px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .skills-and-technos {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%; 
+    }
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 1.2rem; 
+  }
+
+  p, a {
+    font-size: 0.9rem; 
   }
 }

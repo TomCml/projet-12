@@ -7,12 +7,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   color: var(--main-text-color);
   background-color: var(--background-color);
   position: relative;
   clip-path: inset(0);
-  transition: box-shadow 0.2s ease-in-out; /* Ajout de la transition sur box-shadow */
+  transition: box-shadow 0.2s ease-in-out; 
 
   img {
     height: 50px;
@@ -25,15 +25,14 @@
     font-weight: 500;
     white-space: nowrap;
     color: var(--main-text-color);
-    transition: font-weight 0.2s ease-in-out; /* Transition sur font-weight */
-  }
+    transition: font-weight 0.2s ease-in-out;
 
-  &:hover {
-    box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.5); /* Utiliser rgba pour ajuster l'opacité */
-    background-color: white; /* Si besoin pour tester la visibilité de l'ombre */
-
-    h3 {
+    &:hover {
+      
       font-weight: 600;
+
     }
   }
+
+  
 }

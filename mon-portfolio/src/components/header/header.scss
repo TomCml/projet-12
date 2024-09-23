@@ -1,99 +1,129 @@
-header{
-    z-index: 9999;
+header {
+    z-index: 1000;
     background-color: var(--background-color);
     opacity: 0.9;
     display: flex;
     align-items: center;
     justify-content: center;
-    position:fixed;
-    right:0;
-    left:0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top:0;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    
 
-    .header-container {
-
-        width: 1000px;
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        justify-content: space-between;  
-
-        .socials{
-            display: flex;
-            gap: 10px;
-
-            .darkmode{
-                width:25px;
-
-                .darkmodeIcon{
-                    font-size : 25px;
-                    transition: ease-in-out 0.2s;
-
-
-                    &:hover{
-                        transform: translateY(-2px); 
-        
-                    }
-                }
-            }
-    
-            img{
-                width: 25px;
-            transition: ease-in-out 0.2s;
-
-                &:hover{
-                transform: translateY(-2px); 
-
-                }
-            }
-
-            &:hover{
-                cursor: pointer;
-
-            }
-        }
-    
-        .logo {
-            margin-top: 10px;
-            width: 80px;
-            transform-origin: 50% 47%;
-            transition: ease-in-out 0.2s;
-        
-    
-            &:hover {
-                transform: rotatez(60deg)  
-            }
-        }
-    
-        h1{
-            margin: 0;
-            padding: 0 ;
-        }
-    
-         
-    
-        nav{
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            margin-top: 0;
-    
-            a {
-                
-                transition: ease-in-out 0.2s;
-                height:100%;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                
-                &:hover {
-                  background-color: var(--accent-color);
-                  color: var(--background-color) 
-                }   
-            }  
-        }
+    @media (max-width: 768px) {
+      width:100%;
+      
     }
+
+    .darkmode {
+
+      .darkmodeIcon {
+        transition: color 0.3s ease;
+        color: var(--accent-color);
+      }
+    }
+    
+    .drawer-toggle .darkmodeIcon {
+      color: var(--accent-color) !important;
+    }
+    
+    .header-container {
+      width: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .socials {
+        display: flex;
+        gap: 10px;
+
+        svg{
+          transition: ease-in-out 0.2s;
+
+          
+          &:hover{
+          transform: translateY(-2px);
+
+          }
+        }
+  
+        img {
+          width: 25px;
+          transition: ease-in-out 0.2s;
+  
+          &:hover {
+            transform: translateY(-2px);
+          }
+        }
+      }
+  
+      .logo {
+        margin-top: 10px;
+        width: 80px;
+        transform-origin: 50% 47%;
+        transition: ease-in-out 0.2s;
+  
+        &:hover {
+          transform: rotatez(60deg);
+        }
+      }
+  
+      nav.desktop-menu {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        &:hover {
+          color: var(--accent-color);          
+        }
+  
+        a {
+          transition: ease-in-out 0.2s;
+          height: 100%;
+          padding: 30px 10px;
+  
+          &:hover {
+            color: var(--accent-color);
+            
+            transform: translateY(-2px);
+            
+          }
+        }
+      }
+  
+      .mobile-menu-button {
+        display: none;
+      }
+  
+      @media (max-width: 768px) {
+        .mobile-menu-button {
+            
+          display: flex;
+          font-size: 2rem;
+          color: var(--main-text-color);
+        }
+      }
+    }
+  
+  @media (max-width: 768px) {
+
+    max-width:100%;
+
+    .header-container{
+      
+      max-width: 90%;
+    }
+
+    .MuiButtonBase-root {
+      width: 30px;
+
+
+      svg{
+        font-size: 40px;
+      }
+    }
+  }   
 }
+  
