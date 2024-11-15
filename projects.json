@@ -1,0 +1,30 @@
+{
+  "projects": [
+    {
+      "name": "Moderation OTP",
+      "technologies": ["React", "Sass", "Node.js", "MongoDB"],
+      "description": "Réalisation d'un site de planning pour la modération d'un espace de discussion en ligne.",
+      "features": [
+        "Mise à jour automatique des plannings via API",
+        "Création de plannings automatisée",
+        "Gestion des présences utilisateur (ajout/suppression)",
+        "Backend avec gestion automatique de la base de données",
+        "Interface de gestion pour les administrateurs"
+      ],
+      "backgroundImage": "/assets/projects/moderation-otp.png",
+      "link": "https://github.com/TomCZQ/otp_moderation"
+    },
+    {
+      "name": "ArgentBank",
+      "technologies": ["React", "Sass"],
+      "description": "Intégration d'un site bancaire dans le cadre de la formation développeur web de OpenClassrooms.",
+      "features": [
+        "Gestion d'utilisateur via redux",
+        "Système de log-in complet via l'API",
+        "Affichage des comptes bancaires du client"
+      ],
+      "backgroundImage": "/assets/projects/argentBankLogo.png",
+      "link": "https://github.com/TomCZQ/projet-10"
+    }
+  ]
+}
