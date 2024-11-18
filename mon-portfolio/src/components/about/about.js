@@ -51,10 +51,13 @@ const About = () => {
           <h2>Thomas Cemeli</h2>
         </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Bonjour et bienvenue sur mon portfolio ! Je suis un développeur
+          front-end en formation chez OpenClassrooms, qui s'est en chemin
+          découvert une forte appétence pour le back-end. Mon objectif est de
+          proposer un travail de qualité à mes clients, en répondant précisément
+          à leurs besoins. Je suis motivé par le désir constant de m'améliorer
+          et d'apprendre de nouvelles technologies, afin de fournir des
+          solutions innovantes et performantes.
         </p>
       </div>
       <div className="placeholder"></div>

@@ -142,11 +142,15 @@ function Header() {
               <a href="#contact">Contact</a>
             </nav>
             <div className="socials">
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/TomCZQ"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={github} alt="Github logo" />
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/thomas-cemeli-aa7451233/"
                 target="_blank"
                 rel="noreferrer"
               >
