@@ -52,7 +52,7 @@ const About = () => {
         </div>
         <p>
           Bonjour et bienvenue sur mon portfolio ! Je suis un développeur
-          front-end en formation chez OpenClassrooms, qui s'est en chemin
+          front-end, qui s'est en chemin
           découvert une forte appétence pour le back-end. Mon objectif est de
           proposer un travail de qualité à mes clients, en répondant précisément
           à leurs besoins. Je suis motivé par le désir constant de m'améliorer
